@@ -1,0 +1,16 @@
+title: htpdata
+description: 3.17 git for python
+template:
+  repo: htpdata-template
+  name: htpdata
+before:
+  - type: createIssue
+    title: Welcome!
+    body: new-issue.md
+steps:
+  - title: First step
+    description: The first step in your course
+    event: issues.assigned
+    link: '{{ repoUrl }}'
+    actions:
+      - type: closeIssue
